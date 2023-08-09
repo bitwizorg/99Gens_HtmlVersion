@@ -1,0 +1,233 @@
+.new_gif {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(255 255 255 / 70%);
+}
+.mw_50 {
+  max-width: 50% !important;
+}
+.design-mockup {
+  overflow: hidden;
+}
+
+.design-mockup .mockup-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+}
+
+.design-mockup .mockup-tabs .mockup-tab {
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 10px;
+  margin: 0px 4px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.design-mockup .mockup-tabs .mockup-tab:hover, 
+.design-mockup .mockup-tabs .mockup-tab.active {
+  border-bottom: solid 2px #222222;
+  font-weight: bold;
+}
+
+.design-mockup .mockup-tabs .mockup-tab::before {
+  display: none;
+}
+
+.design-mockup .designer-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.design-mockup .designer-toolbar span {
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.design-mockup .designer-toolbar .scale-slider {
+  width: 100%;
+}
+
+.design-mockup .main-mockup-area {
+  padding: 30px;
+  overflow: hidden;
+}
+
+.design-mockup .main-mockup-area .generator-mockup {
+  position: relative;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .upload-design {
+  position: absolute;
+  z-index: 1;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .upload-design .upload-file {
+  display: none;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .backpack-mockup {
+  position: relative;
+  user-select: none;
+}
+
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design,
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design {
+  overflow: hidden;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over {
+  z-index: 1;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design .mockup-img, 
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler {
+  /* border: dashed 1px #1aae9f; */
+  /* cursor: move; */
+  position: absolute;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design .mockup-img {
+  width: 100%;
+  /* height: 100%; */
+  max-width: unset;
+  /* object-fit: fill; */
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler {
+  border: dashed 1px #1aae9f;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler .resize-handler {
+  height: 10px;
+  width: 10px;
+  background-color: #1aae9f;
+  position: absolute;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  user-select: none;
+  /* display: none; */
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler .resize-handler:hover {
+  background-color: #8f0ced;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler .resize-handler.rotate {
+  cursor: url('https://findicons.com/files/icons/1620/crystal_project/16/rotate_ccw.png'), auto;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler .resize-handler.rotate::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  border-left: dashed 1px #1aae9f;
+}
+
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler .resize-handler.cancel {
+  width: 28px;
+  height: 28px;
+  display: block;
+  background-color: #d3455b;
+  user-select: none;
+  /* display: none; */
+  cursor: pointer;
+}
+.design-mockup .main-mockup-area .generator-mockup .mockup-design-over .mockup-handler .resize-handler.cancel::before {
+  content: '+';
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+}
+
+.design-mockup .backpack-mockup span {
+  position: absolute;
+  font-size: 11px;
+  line-height: 1.6;
+}
+/* Backpack Mockup Front */
+.design-mockup .backpack-mockup.front .safe-print-area-top {
+  top: 20%;
+  left: 0px;
+  width: 70px;
+}
+.design-mockup .backpack-mockup.front .safe-print-area-bottom {
+  top: 60%;
+  left: 0px;
+  width: 70px;
+}
+.design-mockup .backpack-mockup.front .front-top {
+  top: 20%;
+  right: 0px;
+}
+.design-mockup .backpack-mockup.front .fold-line {
+  top: 44%;
+  left: 0px;
+}
+.design-mockup .backpack-mockup.front .front-pocket {
+  top: 60%;
+  right: 0px;
+  width: 60px;
+  text-align: right;
+}
+.design-mockup .backpack-mockup .placement-on-product {
+  left: 35px;
+  bottom: 12px;
+}
+/* Backpack Mockup Top */
+.design-mockup .backpack-mockup.top .safe-print-area-top {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.design-mockup .backpack-mockup.top .safe-print-area-bottom {
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Backpack Mockup Bottom */
+.design-mockup .backpack-mockup.bottom .safe-print-area-bottom {
+  bottom: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Backpack Mockup Inside */
+.design-mockup .backpack-mockup.inside .safe-print-area-bottom {
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+}
